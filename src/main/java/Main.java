@@ -18,7 +18,7 @@ class Main {
             DataServer.checkNumber(number);
             System.out.println("<================================================================================================>");
             scanner.nextLine();
-            System.out.println("You have a two objects: obj1 and obj 2, which one you want to check if it's null (type 1 or 2)?");
+            System.out.println("You have a two objects: obj1 and obj 2, which one you want to check if it's a null (type 1 or 2)?");
             int choice = scanner.nextInt();
             if (choice == 1) {
                 DataServer.checkObject(obj1);

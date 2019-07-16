@@ -32,8 +32,9 @@ class DataServer {
 
     static void checkObject(Object object) throws OwnNullObjectException {
         if (Optional.ofNullable(object).isEmpty()) {
-            throw new OwnNullObjectException("The object is null");
+            throw new OwnNullObjectException("Entered object is null");
         } else {
+            System.out.println("Entered object is not null. Object type is: " + object.getClass());
         }
     }
 
