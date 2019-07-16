@@ -1,6 +1,7 @@
 package main.java;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 class Main {
 
@@ -10,9 +11,10 @@ class Main {
         try
                 (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Enter your word: ");
-            String word = scanner.nextLine();
+            String word = scanner.next(Pattern.compile("^[a-zA-Z]+$"));
             DataServer.checkPalindrome(word);
             System.out.println("<================================================================================================>");
+            scanner.nextLine();
             System.out.println("Enter your number: ");
             int number = scanner.nextInt();
             DataServer.checkNumber(number);
