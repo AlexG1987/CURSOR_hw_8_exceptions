@@ -1,4 +1,4 @@
-package main.java.exceptions;
+package exceptions;
 
 public class OwnNullObjectException extends Exception {
     public OwnNullObjectException (String message){

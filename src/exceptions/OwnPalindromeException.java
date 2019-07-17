@@ -1,4 +1,4 @@
-package main.java.exceptions;
+package exceptions;
 
 public class OwnPalindromeException extends Exception {
     public OwnPalindromeException(String message) {
